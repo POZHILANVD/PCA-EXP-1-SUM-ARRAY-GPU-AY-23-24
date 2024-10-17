@@ -175,7 +175,7 @@ int main(int argc, char **argv)
 ```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/4170c88a-0d97-4c31-9785-eca5f305c8bd)
-## BLOCK SIZE = 1203
+## BLOCK SIZE = 1023
 ![image](https://github.com/user-attachments/assets/7e16053f-ce7e-4d60-9bda-c25e7eab2b5e)
 
 ## BLOCK SIZE = 256
