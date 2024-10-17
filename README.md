@@ -10,15 +10,14 @@
 i) Using the program sumArraysOnGPU-timer.cu, set the block.x = 1023. Recompile and run it. Compare the result with the execution configuration of block.x = 1024. Try to explain the difference and the reason.
 
 ii) Refer to sumArraysOnGPU-timer.cu, and let block.x = 256. Make a new kernel to let each thread handle two elements. Compare the results with other execution confi gurations.
-
 ## AIM:
 
 To perform vector addition on host and device.
 
 ## EQUIPMENTS REQUIRED:
-
 Hardware – PCs with NVIDIA GPU & CUDA NVCC
 Google Colab with NVCC Compiler
+
 
 ## PROCEDURE:
 
@@ -30,7 +29,6 @@ Google Colab with NVCC Compiler
 6. Copy output data from the device to the host and verify the results against the host's sequential vector addition. Free memory on the host and the device.
 
 ## PROGRAM:
-
 ```
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -173,12 +171,18 @@ int main(int argc, char **argv)
 
     return(0);
 }
+
 ```
-
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/4170c88a-0d97-4c31-9785-eca5f305c8bd)
+## BLOCK SIZE = 1203
+![image](https://github.com/user-attachments/assets/7e16053f-ce7e-4d60-9bda-c25e7eab2b5e)
 
-![](https://github.com/AshwinRaaj/PCA-EXP-1-SUM-ARRAY-GPU-AY-23-24/raw/main/s1.png)
+## BLOCK SIZE = 256
+![image](https://github.com/user-attachments/assets/3b9a2fbe-ba60-4aa6-85ea-d6fd846d169d)
+
+
 
 ## RESULT:
-
 Thus, Implementation of sum arrays on host and device is done in nvcc cuda using random number.
+
